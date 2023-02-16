@@ -1,0 +1,30 @@
+.bar {
+    padding: 1em;
+    border-bottom: 1px solid;
+    font-family: Ubuntu, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.siteName {
+    padding-left: 1em;
+}
+
+.right {
+    display: inline;
+    margin-left: auto;
+}
+
+.icon {
+    vertical-align: middle;
+}
+
+@media (prefers-color-scheme: dark) {
+    .root {
+        border-bottom-color: darkgray;
+    }
+
+    .icon {
+        filter: invert(100%);
+    }
+}
