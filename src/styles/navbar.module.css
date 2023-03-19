@@ -4,6 +4,7 @@
     font-family: Ubuntu, sans-serif;
     display: flex;
     flex-direction: row;
+    margin-bottom: 1em;
 }
 
 .siteName {

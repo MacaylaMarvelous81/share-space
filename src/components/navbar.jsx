@@ -1,18 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useCallback, useEffect } from "react";
-import Button from "@/components/Button";
+import Button from "@/components/button";
 
-import styles from "@/styles/NavigationBar.module.css";
+import styles from "@/styles/navbar.module.css";
 
-export default function NavigationBar() {
-    const router = useRouter();
-
-    const toUpload = useCallback((event) => {
-        router.push("/upload");
-    }, [ router ]);
-
+export default function Navbar() {
     return (
             <nav className={ styles.bar }>
                 <Link href="/">
@@ -20,7 +12,9 @@ export default function NavigationBar() {
                     <span className={ styles.siteName }>Share Space</span>
                 </Link>
                 <div className={ styles.right }>
-                    <Button text="Upload!" callback={ toUpload } />
+                    <Link href="/upload">
+                        <Button text="Upload!" />
+                    </Link>
                 </div>
             </nav>
     );

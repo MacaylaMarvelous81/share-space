@@ -107,3 +107,8 @@ a {
     color-scheme: dark;
   }
 }
+
+header {
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+}

@@ -1,7 +1,10 @@
 # Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
 v: 0
+app_name: Share Space
 micros:
   - name: share-space
     src: .
     engine: next
     primary: true
+    public_routes:
+      - /
